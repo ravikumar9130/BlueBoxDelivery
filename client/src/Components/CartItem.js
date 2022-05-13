@@ -36,7 +36,7 @@ function CartItem({ itemId, name, imgSrc, price }) {
         })
       } else {
         setQty(qty - 1);
-        console.log(qty);
+       // console.log(qty);
         dispatch({
           type:actionType.SET_TOTAL,
           total:itemPrice

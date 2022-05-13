@@ -51,7 +51,7 @@ export default function SignUp() {
         `${API_URL}/register`,
         data
       );
-      console.log(response.status)
+      //console.log(response.status)
       if (response.status === 201) {
         
         Navigate("/");

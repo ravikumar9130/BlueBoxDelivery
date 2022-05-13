@@ -5,6 +5,7 @@ import Login from "./screens/SignIn";
 import SignUp from "./screens/SignUp"
 //import Cart from "./screens/Cart";
 import Connect from "./Components/Connect";
+import Sucessfully from "./screens/Sucessfully";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         
       </Route>
       <Route path="/connect" element={<Connect/>} />
+      <Route path="/sucess" element={<Sucessfully/>} />
       
       </Routes>
     </BrowserRouter>

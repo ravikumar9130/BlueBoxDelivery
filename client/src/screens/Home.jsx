@@ -10,6 +10,7 @@ import DebitCard from "../Components/DebitCard";
 import SubMenuContainer from "../Components/SubMenuContainer";
 import CartItem from "../Components/CartItem";
 import { useStateValue } from "../Components/StateProvider";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [isMainData, setMainData] = useState(
@@ -146,9 +147,9 @@ const pagePath ="home"
                   <div className="totalSection">
                     <h3>Total</h3>
                     <p>
-                      <span>$ {console.log(total)}</span>{total>24?"0.02":"0.01"} ETH  </p>
+                      <span>$</span>{total>24?"0.02":"0.01"} ETH  </p>
                   </div>
-                  <button className="checkOut">Check Out</button>
+                  <button className="checkOut"><Link to={"/connect"}>Check Out</Link> </button>
                 </div>
               </div>
 
