@@ -42,7 +42,7 @@ export const TransactionsProvider = ({ children }) => {
           amount: parseInt(transaction.amount._hex) / (10 ** 18)
         }));
 
-       console.log(structuredTransactions);
+        console.log(structuredTransactions);
 
         setTransactions(structuredTransactions);
       } else {
@@ -133,7 +133,7 @@ export const TransactionsProvider = ({ children }) => {
         setTransactionCount(transactionsCount.toNumber());
         window.location.assign("http://localhost:3000/sucess")
         console.log("test")
-       // window.location.reload();
+        // window.location.reload();
       } else {
         console.log("No ethereum object");
       }
